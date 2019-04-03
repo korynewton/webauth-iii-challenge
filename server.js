@@ -8,8 +8,8 @@ const usersRoutes = require('./users/usersRoutes');
 const server = express();
 
 server.use(helmet())
-server.use(cors())
 server.use(express.json())
+server.use(cors())
 
 server.use('/api/auth', authRoutes);
 server.use('/api/users', usersRoutes);

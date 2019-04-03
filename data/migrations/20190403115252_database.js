@@ -4,8 +4,8 @@ exports.up = function(knex) {
       tbl.increments()
 
       tbl.string('username', 128).notNullable().unique()
-      tbl.string('password', 128).notNullable()
-      tbl.string('department', 128).notNullable()
+      tbl.string('password', 255).notNullable()
+      tbl.string('department', 128)
   })
 };
 
