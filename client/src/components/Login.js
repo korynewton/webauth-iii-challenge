@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class Login extends Component {
   state = {
       username: 'test4',
-      password: 'password4'
+      password: 'test4'
   }  
 
 
